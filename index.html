@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safe Duplicate Finder</title>
+<meta name="description" content="Support for Safe Duplicate Finder, a Windows app that compares every byte before it calls two files the same.">
+<style>
+  :root {
+    --page: #faf9f7; --surface: #fff; --text: #1c1917; --body: #2b2724;
+    --secondary: #57524e; --tertiary: #726c66;
+    --stroke: rgba(28, 25, 23, .12); --accent: #2560d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0f0f10; --surface: #1b1b1d; --text: #f5f2ef; --body: #ece7e2;
+      --secondary: #c6bfb9; --tertiary: #9a938b;
+      --stroke: rgba(255, 255, 255, .12); --accent: #7fb2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--body);
+         font: 16px/1.6 -apple-system, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 660px; margin: 0 auto; padding: 56px 24px 72px; }
+  h1 { font-size: 32px; line-height: 1.15; color: var(--text); margin: 0 0 8px; font-weight: 600; }
+  h2 { font-size: 20px; color: var(--text); margin: 40px 0 12px; font-weight: 600; }
+  h3 { font-size: 17px; color: var(--text); margin: 22px 0 4px; font-weight: 600; }
+  .lead { font-size: 18px; color: var(--secondary); margin: 0; }
+  .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+             color: var(--accent); margin: 0 0 12px; font-weight: 600; }
+  ul { padding-left: 22px; } li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--stroke);
+          border-radius: 12px; padding: 18px 20px; margin: 20px 0; }
+  .foot { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--stroke);
+          font-size: 14px; color: var(--tertiary); }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="eyebrow">Support</p>
+  <h1>Safe Duplicate Finder</h1>
+  <p class="lead">Finds files that are genuinely identical, and removes nothing you did not choose.</p>
+
+  <h2>Get help</h2>
+  <div class="card">
+    <p style="margin:0"><strong><a href="https://github.com/muhzuhaib/safe-duplicate-finder/issues">Report a problem or ask a question</a></strong></p>
+    <p style="margin:6px 0 0; font-size:14px; color:var(--tertiary)">Please include your version, shown under the gear icon, then About.</p>
+  </div>
+
+  <h2>Questions</h2>
+
+  <h3>Is it really free?</h3>
+  <p>Yes. No file limit, no size cap, no trial. There is one optional extra, Duplicate Folders, at 24.99 US dollars once. Skip it and nothing is hidden or greyed out.</p>
+
+  <h3>How does it decide two files are copies?</h3>
+  <p>It reads them. Files are grouped by exact size, a small part of each is read to rule out coincidences, and what is left is compared byte for byte. Never by file name.</p>
+
+  <h3>Where do the files go?</h3>
+  <p>The Recycle Bin, so you can put them back. Each file is checked against the disk again just before it is removed, and anything that changed since the scan is kept instead.</p>
+
+  <h3>Can it delete every copy by mistake?</h3>
+  <p>No. One copy of every set always stays. The app refuses the last tick and says so on screen.</p>
+
+  <h3>Does it find photos that look alike?</h3>
+  <p>No. A picture saved again at a different size is a different file, and this app only reports files that match byte for byte.</p>
+
+  <h3>Does it send anything anywhere?</h3>
+  <p>No. No account, no telemetry, no network connection. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h3>What does it leave alone?</h3>
+  <p>Windows, Program Files and the Store app folder. A repeated file there is usually meant to be there.</p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>Windows 10 version 1809 or later, 64 bit</li>
+    <li>Nothing else to install</li>
+  </ul>
+
+  <div class="foot">
+    <p><a href="privacy.html">Privacy policy</a></p>
+    <p>Published by zuhaib.</p>
+  </div>
+
+</main>
+</body>
+</html>
