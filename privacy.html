@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy: Safe Duplicate Finder</title>
-<meta name="description" content="Privacy policy for Safe Duplicate Finder. The app collects nothing and has no network connection.">
+<meta name="description" content="Privacy policy for Safe Duplicate Finder. The app collects nothing and makes no network connections.">
 <style>
   :root {
     --page: #faf9f7; --surface: #fff; --text: #1c1917; --body: #2b2724;
@@ -13,8 +13,8 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --page: #0f0f10; --surface: #1b1b1d; --text: #f5f2ef; --body: #ece7e2;
-      --secondary: #c6bfb9; --tertiary: #9a938b;
+      --page: #0f0f10; --surface: #1b1b1d; --text: #f2f2f2; --body: #e8e8e8;
+      --secondary: #c2c2c2; --tertiary: #9a9a9a;
       --stroke: rgba(255, 255, 255, .12); --accent: #7fb2ff;
     }
   }
@@ -41,24 +41,24 @@
 
   <p class="eyebrow">Privacy policy</p>
   <h1>Safe Duplicate Finder</h1>
-  <p class="lead">The app collects nothing and has no network connection of any kind.</p>
-  <p class="date">Updated 20 August 2026. Applies to version 1.0 and later.</p>
+  <p class="lead">The app collects nothing and makes no network connections.</p>
+  <p class="date">Updated 6 November 2026. Applies to version 1.0 and later.</p>
 
   <div class="card">
-    <p style="margin:0">No account, no sign in, no telemetry, no analytics, no advertising. The app does not ask Windows for internet access, so it has no way to send anything anywhere.</p>
+    <p style="margin:0">No account, no sign in, no telemetry, no analytics, no advertising. The app's code makes no network connections and sends nothing anywhere.</p>
   </div>
 
   <h2>What it reads</h2>
-  <p>Only the folders you choose, and only during a scan. It reads file contents to prove two files are identical, because that is the point of the product. Nothing read is written down, kept or sent.</p>
+  <p>Only the folders you choose: during a scan, before a removal, and for Backup Cleanup, the re-check on launch. It reads file contents to prove two files are identical, because that is the point of the product. File contents are never written down or sent. Backup Cleanup keeps paths and hashes in a local record of each job, so the job can be undone.</p>
 
   <h2>What it stores</h2>
-  <p>Two local settings, neither about your files: the appearance you chose, and whether the welcome screen has been shown. Both are removed when you uninstall. There is no log and no scan history.</p>
+  <p>A few local settings, none about your files: the appearance, whether the welcome screen was shown, and your scan choices. They are removed when you uninstall. If an item goes by the short folder route, a local record of its path (short-route.jsonl) stays until the bin no longer holds it. If you use Backup Cleanup, the app also keeps, on your own computer, a record of each job so it can be undone, a CSV and HTML report of it, and the date it last checked the folder you keep, so it can check again on the first launch 30 days or more later. These stay on your computer, are never sent anywhere, and you can delete them yourself. Apart from these, the app keeps no scan history.</p>
 
   <h2>What it deletes</h2>
-  <p>Only the copies you tick. One copy of every set always stays, and everything removed goes to the Recycle Bin.</p>
+  <p>Only the copies and folders you choose. This app never removes the last copy of a set, and everything removed goes to the Recycle Bin. Backup Cleanup sends the old folder to the Recycle Bin only when nothing unique is left in it. Removal needs a drive with a Recycle Bin. Most USB sticks, SD cards and network drives have none, so they are compared but not cleaned.</p>
 
   <h2>The optional purchase</h2>
-  <p>Duplicate Folders is handled entirely by the Microsoft Store. The app asks Windows one question, whether this account owns it, and gets yes or no. It never sees your name, email or payment details. Microsoft's part is covered by the <a href="https://privacy.microsoft.com/privacystatement">Microsoft privacy statement</a>.</p>
+  <p>Backup Cleanup (USD 14.99 once) and Backup Cleanup Monthly (USD 4.99 a month) are handled entirely by the Microsoft Store. The app asks Windows whether this account owns either one, and what each costs in your money, for the prices on its buttons. It never sees your name, email or payment details. Microsoft's part is covered by the <a href="https://privacy.microsoft.com/privacystatement">Microsoft privacy statement</a>.</p>
 
   <h2>What Microsoft reports</h2>
   <p>As with every Store app, Microsoft gives the developer install counts, ratings and anonymous crash data. That comes from the Store, not from the app, and it contains nothing about your files.</p>
@@ -74,6 +74,7 @@
 
   <div class="foot">
     <p><a href="index.html">Back to support</a></p>
+    <p><a href="licence.html">Licence</a></p>
     <p>Published by zuhaib.</p>
   </div>
 
